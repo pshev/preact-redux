@@ -1,0 +1,45 @@
+{
+  "name": "@petershev/preact-redux",
+  "version": "1.0.0",
+  "description": "simple preact-redux bindings",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --out-dir . --ignore *.test.js src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pshev/preact-redux.git"
+  },
+  "author": "Peter Shev <piotrsevcenco@gmail.com> (http://petershev.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.24.0",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-preset-es2015": "6.24.0",
+    "babel-preset-react": "6.23.0",
+    "babel-preset-stage-2": "6.22.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      [
+        "transform-react-jsx",
+        {
+          "pragma": "h"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "fbjs": "0.8.12",
+    "hoist-non-react-statics": "1.2.0",
+    "is-plain-object": "2.0.1",
+    "preact": "8.1.0",
+    "redux": "3.6.0"
+  }
+}
